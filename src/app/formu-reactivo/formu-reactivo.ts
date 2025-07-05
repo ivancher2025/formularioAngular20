@@ -23,6 +23,7 @@ export class FormuReactivo {
  
   enviar(){
     this.correos.push(this.correo);
+    this.correo="";
   }
 
 /*
