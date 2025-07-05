@@ -3,12 +3,11 @@
       <br>
   <label>
     Correo
-    <input type="email" formControlName="email" />
+    <input type="email" formControlName="email" [(ngModel)]="correo" />
   </label>
   <button type="submit" [disabled]="!profileForm.valid" class="boton">Submit</button>
 </form>
-<h2>Despliegue de correo</h2>
-<p>Email: {{ profileForm.value.email }}</p>
+<p>Email ingresado: {{ profileForm.value.email }}</p>
 
 <table *ngIf="correos.length > 0" border="1" style="margin-top: 2rem;" >
     <caption class="titulo">
